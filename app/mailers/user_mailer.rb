@@ -1,6 +1,6 @@
 class UserMailer < ApplicationMailer
   # this is a hash called default
-  default from: "pkbanks@gmail.com"
+  default from: "hoorayfun123@gmail.com"
 
 
   def welcome_email(user)

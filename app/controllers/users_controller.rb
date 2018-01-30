@@ -30,7 +30,7 @@ class UsersController < ApplicationController
       if @user.save
 
         # tell the UserMailer to send a welcome email after saving user
-        UserMailer.welcome_email(@user).deliver_later
+        UserMailer.welcome_email(@user).deliver_now
 
 
         format.html { redirect_to @user, notice: 'User was successfully created.' }
