@@ -4,6 +4,7 @@ class UserMailer < ApplicationMailer
 
 
   def welcome_email(user)
+    p "*** welcome email ***"
     @user = user
     @url = 'http://example.com/login'
 
